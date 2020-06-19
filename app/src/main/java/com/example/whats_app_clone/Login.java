@@ -54,7 +54,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
         switch (v.getId()) {
             case R.id.login_page_login_btn:
                 if (username.getText().toString().isEmpty() || username.getText().toString().isEmpty() || password.getText().toString().isEmpty()) {
-                    FancyToast.makeText(Login.this, "Email, Username, Password is required!", FancyToast.LENGTH_LONG, FancyToast.INFO, true).show();
+                    FancyToast.makeText(Login.this, "////Email, Username, Password is required!", FancyToast.LENGTH_LONG, FancyToast.INFO, true).show();
                 } else {
                     ParseUser.logInInBackground(username.getText().toString(), password.getText().toString(),
                             new LogInCallback() {
